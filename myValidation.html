@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href = './myValidation.css' rel='stylesheet'>
+  <title>my Validation - for practice</title>
+</head>
+<body>
+  <!--회원가입 창 만들기 / 유효성검사 / 정규표현식은 기존에 썼던거 써보기.-->
+  <!--기능구현만 해보기 : 아이디 / 비번 / 비번확인 / 버튼 / 알림-->
+  <div id = container>
+    <div class = signup-box>
+      <!--아이디-->
+      <input class = 'user-id' type = 'text' placeholder="아이디를 입력하세요"><br/>
+      <p class = 'failure-message hide'>아이디는 영문 숫자 조합으로 작성해주세요.</p>
+      <p class = 'succeess-message hide'>사용 가능한 아이디 입니다.</p>
+      <!--비밀번호-->
+      <input class = 'user-pw' type = 'text' placeholder="비밀번호를 입력하세요"><br/>
+      <p class = 'failure-message-pw hide'>비밀번호는 영문/숫자/기호 조합의 12자리 이내로 작성해주세요.</p>
+      <p class = 'succeess-message-pw hide'>사용 가능한 비밀번호 입니다.</p>
+      <!--비밀번호 확인-->
+      <input class = 'user-pw-chk' type = 'text' placeholder="비밀번호를 확인하세요"><br/>
+      <p class = 'failure-message-pwchk hide'>비밀번호가 일치하지 않습니다.</p>
+      <p class = 'succeess-message-pwchk hide'>비밀번호 일치 성공.</p>
+      <button class = 'signin-btn'>회원가입</button>
+    </div>
+  </div>
+  <script src = './myValidation.js'></script>
+</body>
+</html>
